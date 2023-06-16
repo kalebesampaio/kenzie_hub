@@ -1,4 +1,4 @@
-import { ButtonFormStyle } from "./styled";
+import { ButtonFormStyle } from "./styles";
 export interface IButtonProps {
   color?: string;
   children?: string;

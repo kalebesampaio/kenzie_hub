@@ -7,21 +7,26 @@ export const ButtonFormStyle = styled.button`
   align-items: center;
 
   padding: 0px 22px;
-  gap: 10px;
   width: 324px;
   height: 48px;
 
-  font-size: 16px;
+  font-size: 1rem;
   color: #ffffff;
 
   background: #${(props) => (props.color ? props.color : "ff577f")};
 
-  border: 1.2px solid #ff577f;
+  border: 1.2px solid #${(props) => (props.color ? props.color : "ff577f")};
   border-radius: 4px;
+  margin-top: 2rem;
 
   cursor: pointer;
   transition: 0.3s;
   &:hover {
+    background: #${(props) => (props.color ? "343B41" : "59323F")};
+    border: 1.2px solid #${(props) => (props.color ? "343B41" : "59323F")};
+    transition: 0.3s;
+  }
+  &:active {
     animation: pulse 1s;
     transition: 0.3s;
   }
