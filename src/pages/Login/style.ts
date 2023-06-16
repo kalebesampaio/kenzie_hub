@@ -35,4 +35,8 @@ export const ContainerLogin = styled.div`
     color: var(--grey-1);
     margin-top: 2rem;
   }
+  @media (max-width: 500px) {
+    width: 95%;
+    align-items: normal;
+  }
 `;
