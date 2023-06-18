@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const RegisterStyle = styled.div`
-  max-width: 100vw;
+  width: 100vw;
+  min-height: 100vh;
   background-color: var(--grey-4);
 
   display: flex;
@@ -13,6 +14,11 @@ export const RegisterStyle = styled.div`
     margin: 22px 22px;
     font-size: 1.7rem;
     font-weight: bold;
+  }
+  @media (max-width: 500px) {
+    h1 {
+      margin: 22px 0px;
+    }
   }
 `;
 
@@ -33,6 +39,9 @@ export const ContainerRegister = styled.div`
     font-size: 12px;
     color: var(--grey-1);
     margin-top: 2rem;
+  }
+  @media (max-width: 500px) {
+    width: 95%;
   }
 `;
 
@@ -57,5 +66,8 @@ export const ContainerTitle = styled.div`
     &:hover {
       background-color: var(--grey-2);
     }
+  }
+  @media (max-width: 500px) {
+    width: 95%;
   }
 `;
