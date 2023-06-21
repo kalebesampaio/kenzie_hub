@@ -56,12 +56,18 @@ export const Form = ({ children, text }: IFormProps) => {
 
   const handleRegister = async (data: any) => {
     try {
-      await api.post("/users", data);
-      notify("Successfully registered");
-
-      navigate("/login");
+      await api
+        .post("/users", data)
+        .then((res) => {
+          notify("Successfully registered");
+          navigate("/login");
+          console.log(res);
+        })
+        .catch((err) => {
+          notify("failed to register");
+          console.log(err);
+        });
     } catch (error) {
-      notify("failed to register");
       console.error(error);
     }
   };
