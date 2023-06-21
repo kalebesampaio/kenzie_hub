@@ -1,6 +1,3 @@
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-
 import { ButtonForm } from "../../components/ButtonForm";
 import { Form } from "../../components/Form";
 import { ContainerLogin, LoginStyle } from "./style";

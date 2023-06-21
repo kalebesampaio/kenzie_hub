@@ -2,7 +2,6 @@ import { createContext, ReactNode, useContext, useState } from "react";
 import { api } from "../services/api";
 import { AuthContext, IToken } from "./AuthProvider";
 import jwtDecode from "jwt-decode";
-import { string } from "zod";
 import { notify } from "../utils/toast";
 
 interface ListProvaiderProps {

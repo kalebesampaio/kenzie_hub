@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Header } from "../../components/Header";
 import { Navbar } from "../../components/Navbar";
 import { TechList } from "../../components/TechList";

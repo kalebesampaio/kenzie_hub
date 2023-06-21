@@ -23,11 +23,7 @@ const ModalCreate = ({ setIsOpenModal, isOpenModal }: Props) => {
 
   const { newTech } = useContext<ITechContext>(TechContext);
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
+  const { register, handleSubmit } = useForm({
     resolver: zodResolver(schemaTech),
   });
 

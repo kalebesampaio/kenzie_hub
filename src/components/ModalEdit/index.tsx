@@ -19,11 +19,7 @@ const ModalEdit = ({ setIsOpenModal, isOpenModal }: Props) => {
   const schemaTech = z.object({
     status: z.string(),
   });
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm({
+  const { register, handleSubmit } = useForm({
     resolver: zodResolver(schemaTech),
   });
 
