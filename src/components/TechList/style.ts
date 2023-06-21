@@ -59,12 +59,13 @@ export const ContainerList = styled.ul`
   padding: 20px;
 `;
 
-export const Techs = styled.li`
+export const Techs = styled.button`
   width: 100%;
   height: 49px;
   background: var(--grey-4);
   border-radius: 4px;
   padding: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
 
   display: flex;

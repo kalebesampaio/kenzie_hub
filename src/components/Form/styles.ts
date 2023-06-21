@@ -56,6 +56,11 @@ export const FormStyle = styled.form`
 
     margin-bottom: 10px;
   }
+  span {
+    font-size: 12px;
+    color: #e30613;
+    text-align: center;
+  }
   @media (max-width: 500px) {
     width: 100%;
     input {

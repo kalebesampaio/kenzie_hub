@@ -24,7 +24,7 @@ export const ContainerLogin = styled.div`
   padding: 42px 22px;
 
   width: 369px;
-  height: 502px;
+  min-height: 502px;
 
   background: var(--grey-3);
   box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
