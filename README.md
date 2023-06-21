@@ -7,7 +7,7 @@
 
 ## Rodando projeto
 
-Link do deploy: https://kenzie-hub-nine-topaz.vercel.app/login
+Link do deploy: https://kenzie-hub-nine-topaz.vercel.app/
 
 
 É necessário instalar as dependências, portanto utilize o comando abaixo para instalar tais dependências:
