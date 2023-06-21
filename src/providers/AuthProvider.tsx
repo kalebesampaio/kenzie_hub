@@ -78,9 +78,10 @@ export const AuthProvider = ({ children }: ListProvaiderProps) => {
   }, []);
 
   const signIn = async (data: DataLogin) => {
-    const response = await api
-      .post("/sessions/", data)
-      .catch((err) => notify("Login failed"));
+    const response = await api.post("/sessions/", data).catch((err) => {
+      console.log(err);
+      notify("Login failed");
+    });
 
     const { user: userResponse, token } = response?.data;
     notify("Login sucess");
